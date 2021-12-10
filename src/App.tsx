@@ -71,7 +71,7 @@ const App = observer(({ state }: { state: AppState }) => {
                   </SubMenu>
 
                   <Menu.Item key="github">
-                    <a target="_blank" href="https://meedu.app">
+                    <a target="_blank" href="https://github.com/darwin-morocho/simple-react-chat">
                       GitHub
                     </a>
                   </Menu.Item>
