@@ -1,13 +1,73 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.App-header input {
+  background-color: transparent;
+  font-size: 29px;
+  border: none;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  min-width: 350px;
+  padding: 10px;
+  text-align: center;
+}
+
+.App-header input:focus {
+  outline: none;
+}
+
+.is-me {
+  display: flex;
+  justify-content: right;
+  padding: 10px;
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.is-not-me {
+  display: flex;
+  justify-content: left;
+  padding: 10px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.is-me .user,
+.is-me .date {
+  padding-right: 15px;
+  color: #203941cf;
+}
+
+.is-not-me .user,
+.is-not-me .date {
+  padding-left: 15px;
+  color: #203941cf;
+}
+
+.is-not-me .text {
+  background-color: #e3e2e2;
+  color: rgb(19, 24, 36);
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 25px;
+  max-width: 350px;
+}
+
+.is-me .text {
+  background-color: #1e88e5;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 25px;
+  max-width: 350px;
+  font-size: 25px;
 }
